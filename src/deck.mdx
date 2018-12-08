@@ -1,25 +1,7 @@
-import { future } from 'mdx-deck/themes'
+export { theme } from './theme';
 import { Image, Appear, Head } from 'mdx-deck'
 import { Split } from 'mdx-deck/layouts'
-
-export const theme = {
-	...future,
-	colors: {
-		text: 'rgb(214, 222, 235)',
-		code: 'rgb(130, 170, 255)',
-		link: 'rgb(128, 203, 196)',
-		background: 'black',
-	}
-}
-
-export const styles = {
-	stone: {
-		marginLeft: '200px',
- 		width: '700px',
-     	height: '700px',
- 	}
- }
-
+import { styles } from './styles'
 
 <Head>
     <title>Milad</title>
@@ -36,6 +18,55 @@ export const styles = {
 
 export default Split
 
-<Image style={styles.stone} src={require('file-loader!../img/stone_Milad.jpg')} />
+<Image style={{...styles.stone, ...styles.commonSize}} src={require('file-loader!../img/stone_Milad.jpg')} />
 
 I was born Deaf.
+
+---
+
+<Appear>	
+	<p>Studied at BME university interacting well with international hearing people</p>
+	<p>Embedded and Control System</p>
+	<p>Some students who I taught and helped had some difficulties graping at some courses.</p>
+	<p>I was the best student and excellent studying</p>
+</Appear>
+
+---
+
+<Image src={require('file-loader!../img/three-gun-men.jpg')} />
+
+---
+
+# SignAll
+#### Inspirer
+
+- as part of the SignAll team, my main research target is to solve the automated translation of sign language into spoken languages and change the world!
+
+---
+
+# Epam System Kft
+#### Senior Software Developer
+
+- mentoring mentees
+- also working as a developer in a diverse range of subjects of projects
+
+---
+
+# Warriors Community
+#### Founder
+
+- We all have ready knowledge sharing to contribute open sources. We all communicate to each other, multi-culture, multi-language. that truly make the world open for everyone.
+
+---
+
+# SignCoders
+#### Co-founder
+
+- Helping organizing, helping deaf people to acheive their true dreams
+- Solution architect
+- Delivery manager
+
+---
+
+# Thank you!
+
