@@ -1,8 +1,41 @@
-export { future as theme } from 'mdx-deck/themes'
+import { future } from 'mdx-deck/themes'
+import { Image, Appear, Head } from 'mdx-deck'
+import { Split } from 'mdx-deck/layouts'
+
+export const theme = {
+	...future,
+	colors: {
+		text: 'rgb(214, 222, 235)',
+		code: 'rgb(130, 170, 255)',
+		link: 'rgb(128, 203, 196)',
+		background: 'black',
+	}
+}
+
+export const styles = {
+	stone: {
+		marginLeft: '200px',
+ 		width: '700px',
+     	height: '700px',
+ 	}
+ }
+
+
+<Head>
+    <title>Milad</title>
+    <meta name='twitter:card' content='summary_large_image' />
+    <meta name='twitter:site' content='@milad.vafaeifard' />
+    <meta name='twitter:title' content='bout me' />
+    <meta name='twitter:description' content='What happned to me?' />
+    <meta name='twitter:image' content='milad' />
+</Head>
 
 # Milad Vafaeifard
 
-```jsx
-<CodeSnippet />
-```
+---
 
+export default Split
+
+<Image style={styles.stone} src={require('file-loader!../img/stone_Milad.jpg')} />
+
+I was born Deaf.

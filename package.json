@@ -1,26 +1,19 @@
 {
-  "private": true,
-  "name": "next-mdx",
+  "private": false,
+  "version": "1.0.0",
+  "name": "my-talks",
+  "author": "Milad Vafaeifard",
+  "license": "MIT",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start",
-    "start:deck": "mdx-deck deck.mdx",
-    "build:deck": "mdx-deck build deck.mdx"
+    "start:deck": "mdx-deck src/deck.mdx",
+    "build:deck": "mdx-deck build src/deck.mdx"
   },
   "dependencies": {
-    "@mdx-js/loader": "^0.16.5",
-    "@mdx-js/mdx": "^0.16.5",
-    "@zeit/next-mdx": "^1.2.0",
-    "next": "^7.0.2",
     "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "remark-emoji": "^2.0.2",
-    "remark-images": "^0.16.1",
-    "unified-ui": "^0.0.3"
+    "react-dom": "^16.6.3"
   },
-  "version": "1.0.0",
   "devDependencies": {
+    "file-loader": "^2.0.0",
     "mdx-deck": "^1.8.2"
   }
 }
