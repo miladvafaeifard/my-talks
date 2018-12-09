@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "start:deck": "mdx-deck src/deck.mdx",
-    "build:deck": "mdx-deck build src/deck.mdx"
+    "build:deck": "mdx-deck build src/deck.mdx",
+    "deploy": "npm run build:deck && now alias dist/"
   },
   "dependencies": {
     "react": "^16.6.3",
@@ -15,5 +16,6 @@
   "devDependencies": {
     "file-loader": "^2.0.0",
     "mdx-deck": "^1.8.2"
-  }
+  },
+  "alias": "https://milad-signcoders.now.sh"
 }

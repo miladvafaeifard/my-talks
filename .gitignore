@@ -1,4 +1,4 @@
 node_modules/
 .next/
-dist/index.html
-dist/main.js
+!dist/now.json
+dist/
